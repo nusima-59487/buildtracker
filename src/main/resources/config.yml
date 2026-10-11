@@ -1,0 +1,19 @@
+# plugin_version:
+edit_review_after_approved: false
+
+# define marker types from bottom of track to the top
+# when a marker is resolved, it will advance to the type on top of the current type
+# a "completed" type is hardcoded into the plugin, so it is not necessary
+marker_type_track:
+  pending:
+    name: "Pending"
+    icon: "YELLOW_WOOL"
+  incomplete:
+    name: "Incomplete"
+    icon: "RED_WOOL"
+
+# whether to resolve the marker (to the next type on the track) automatically
+# "auto": automatically resolve the marker once all assignees have reviewed and marked it as completed
+# "maunal": the creator of the marker needs to resolve it manually using `/bt resolve ...`
+track_resolve_mode: manual # /auto
+show_on_dynmap: false

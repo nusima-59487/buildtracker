@@ -1,0 +1,16 @@
+name: buildtracker
+main: me.nusimucat.buildtracker.Plugin
+version: dev
+api-version: 1.21.10
+author: nusima-59487
+permissions:
+  buildtracker.user:
+    description: Allows the user to use the buildtracker plugin
+    default: op
+commands:
+  marker:
+    description: Allows the user to manage markers
+  task:
+    description: Allows the user to manage tasks
+  bt:
+    description: Allows the user to manage buildtracker data

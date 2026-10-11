@@ -1,0 +1,18 @@
+name: hi
+author: xPeachy1118x
+type: pending
+description: whatever this is called
+location:
+  ==: org.bukkit.Location
+  world: world
+  x: 124.5
+  y: 64.0
+  z: -250.3
+  pitch: 0.0
+  yaw: 90.0
+dynmap_visible: true
+assignees:
+  Aleiyuisus:
+    reviewed: true
+    review_status: complete # /incomplete
+    comment: hi
