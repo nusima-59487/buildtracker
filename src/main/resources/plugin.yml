@@ -1,4 +1,4 @@
-name: buildtracker
+name: BuildTracker
 main: me.nusimucat.buildtracker.Plugin
 version: dev
 api-version: 1.21.10
