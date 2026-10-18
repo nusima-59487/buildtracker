@@ -1,0 +1,10 @@
+messages:
+  marker_list_info: "<br><b><name></b> <gray>(<id>)</gray><br>
+    - <dark_green>Location: </dark_green><location><br>
+    - <dark_green>Status: </dark_green><type>"
+
+templates:
+  location: "<white><x>, <y>, <z></white>"
+  location_action: "<click:suggest_command:'/tp <x> <y> <z>'><dark_gray>[</dark_gray><u><dark_aqua>Teleport</dark_aqua></u><dark_gray>]</dark_gray></click>"
+  info_action: "<click:suggest_command:'/marker <marker_id> info'><dark_gray>[</dark_gray><u><dark_green>View Marker</dark_green></u><dark_gray>]</dark_gray></click>"
+  task_mark_action: "<click:suggest_command:'/task <marker_id> mark '><dark_gray>[</dark_gray><u><blue>Mark Task</blue></u><dark_gray>]</dark_gray></click>"

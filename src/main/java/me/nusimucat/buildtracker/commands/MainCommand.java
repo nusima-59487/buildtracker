@@ -13,6 +13,7 @@ import com.mojang.brigadier.tree.LiteralCommandNode;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import io.papermc.paper.command.brigadier.Commands;
 import me.nusimucat.buildtracker.DataManager;
+import me.nusimucat.buildtracker.MessageManager;
 import me.nusimucat.buildtracker.Plugin;
 import me.nusimucat.buildtracker.Utils;
 import me.nusimucat.buildtracker.data.MarkerData;
@@ -46,7 +47,12 @@ public class MainCommand {
                         if (data == null)
                             continue;
                         // TODO: make this fancier
-                        ctx.getSource().getSender().sendMessage(""+data.getName());
+                        ctx.getSource().getSender().sendMessage(MessageManager.getMarkerInfoComponent(
+                            markerId,
+                            data,
+                            ctx.getSource().getSender() instanceof Player pl ? pl : null
+                        ));
+                        // ctx.getSource().getSender().sendMessage(""+data.getName());
                     }
 
                     return Command.SINGLE_SUCCESS;

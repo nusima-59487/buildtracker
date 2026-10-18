@@ -26,6 +26,7 @@ public class Plugin extends JavaPlugin {
         ConfigurationSerialization.registerClass(TaskData.class);
 
         DataManager.init();
+        MessageManager.init();
 
         loggerInstance.info("BuildTracker v"+pluginVersion+" enabled!");
         this.getLifecycleManager().registerEventHandler(LifecycleEvents.COMMANDS, commands -> {
